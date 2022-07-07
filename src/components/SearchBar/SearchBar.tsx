@@ -13,6 +13,7 @@ export function SearchBar({ onSendCity }: Data) {
 
   function handleSearchedCity(city: string,clicked: boolean) {
     onSendCity(city,clicked)
+    setCity("")
   }
 
   return (

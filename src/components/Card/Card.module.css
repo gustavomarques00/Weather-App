@@ -24,6 +24,10 @@
     font-size: 1.2rem;
 }
 
+.infoTemp{
+    font-size: 4rem !important;
+}
+
 
 .descWrapper {
     width: 100%;

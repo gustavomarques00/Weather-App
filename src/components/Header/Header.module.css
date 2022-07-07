@@ -1,0 +1,13 @@
+.mainWrapper{
+    display: flex;
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    gap: 0 1rem;
+    padding: 2rem;
+    border-bottom: 2px solid white;
+}
+
+.mainWrapper h1{
+    letter-spacing: 0.25rem;
+}

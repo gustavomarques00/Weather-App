@@ -5,18 +5,20 @@ import { Header } from "./components/Header/Header";
 import { SearchBar } from "./components/SearchBar/SearchBar";
 
 function App() {
-  const [city, setCity] = useState("")
+  const [citySelected, setCitySelected] = useState("")
+  const [clicked, setClicked] = useState(false)
 
   function onSendCity(data: string){
-    setCity(data)
+    setCitySelected(data)
+    setClicked(true)
   }
 
   return (
     <div>
       <Header />
-      <SearchBar onSendCity={onSendCity} />
+      <SearchBar onSendCity={onSendCity}   />
       <div className={styles.cardWrapper}>
-        <Card city={city} />
+        <Card citySelected={citySelected} clicked={clicked} />
       </div>
     </div>
   );
